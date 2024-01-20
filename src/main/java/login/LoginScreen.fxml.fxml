@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity"  minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginScreenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4cdf4" height="820.0" layoutX="1061.0" stroke="#060000" strokeType="INSIDE" width="25.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4cdf4" height="25.0" layoutY="91.0" stroke="BLACK" strokeType="INSIDE" width="1150.0" />
+      <Label layoutX="489.0" layoutY="23.0" prefHeight="58.0" prefWidth="135.0" text="Login" textFill="#9e7b81">
+         <font>
+            <Font name="Sitka Banner Bold" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="LoginButton" layoutX="406.0" layoutY="656.0" mnemonicParsing="false" onAction="#login" prefHeight="46.0" prefWidth="359.0" text="Login" textFill="#6b2525">
+         <font>
+            <Font name="Sitka Banner Bold" size="34.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant color="#605a9d" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TextField fx:id="Password" layoutX="285.0" layoutY="515.0" prefHeight="58.0" prefWidth="600.0" promptText="Password">
+         <font>
+            <Font name="Sitka Banner" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Email_ID" layoutX="285.0" layoutY="426.0" prefHeight="58.0" prefWidth="600.0" promptText="Email ID">
+         <font>
+            <Font name="Sitka Banner" size="25.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="215.0" layoutY="384.0" prefHeight="4.0" prefWidth="724.0" />
+      <ImageView fitHeight="206.0" fitWidth="277.0" layoutX="418.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/ShoppingLogo-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

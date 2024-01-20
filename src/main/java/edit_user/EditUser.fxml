@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" fx:controller="edit_user.EditUserController" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4cdf4" height="90.0" stroke="BLACK" strokeType="INSIDE" width="1150.0" />
+      <Label layoutX="14.0" layoutY="25.0" prefHeight="41.0" prefWidth="153.0" text="Edit User" textFill="WHITE">
+         <font>
+            <Font name="Sitka Banner Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="862.0" layoutY="23.0" text="G" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="908.0" layoutY="26.0" text="Gaurav (Admin)" textFill="WHITE">
+         <font>
+            <Font name="Sitka Banner Bold" size="34.0" />
+         </font>
+      </Label>
+      <Circle fill="#202290" layoutX="873.0" layoutY="46.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextField fx:id="NewUserName" layoutX="369.0" layoutY="235.0" prefHeight="47.0" prefWidth="476.0" promptText="NEW USER NAME" />
+      <TextField fx:id="NewEmailID" layoutX="369.0" layoutY="334.0" prefHeight="47.0" prefWidth="476.0" promptText="NEW EMAIL ID" />
+      <TextField fx:id="NewPassword" layoutX="369.0" layoutY="437.0" prefHeight="47.0" prefWidth="476.0" promptText="NEW PASSWORD" />
+      <TextField fx:id="NewUserRole" layoutX="369.0" layoutY="539.0" prefHeight="47.0" prefWidth="476.0" promptText="NEW USER ROLE" />
+      <TextField fx:id="UserName" layoutX="328.0" layoutY="106.0" prefHeight="47.0" prefWidth="476.0" promptText="UserName" />
+      <Label layoutX="157.0" layoutY="244.0" prefHeight="29.0" prefWidth="159.0" text="EditUserName ">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="343.0" prefHeight="28.0" prefWidth="138.0" text="EditEmail_ID">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="447.0" prefHeight="28.0" prefWidth="153.0" text="Edit_Password">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="548.0" prefHeight="28.0" prefWidth="108.0" text="Edit_Role">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="115.0" prefHeight="29.0" prefWidth="138.0" text="User Name ">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="Edit" layoutX="873.0" layoutY="106.0" mnemonicParsing="false" onAction="#Edit" prefHeight="39.0" prefWidth="172.0" text="Edit">
+         <font>
+            <Font name="Sitka Banner Bold" size="20.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#799eda" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label layoutX="862.0" layoutY="22.0" text="G" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="Save" layoutX="607.0" layoutY="673.0" mnemonicParsing="false" onAction="#Save" prefHeight="58.0" prefWidth="322.0" text="Save">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="Close" layoutX="186.0" layoutY="673.0" mnemonicParsing="false" onAction="#Close" prefHeight="58.0" prefWidth="322.0" text="Close" textFill="RED">
+         <cursor>
+            <Cursor fx:constant="W_RESIZE" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <ColorAdjust>
+                     <input>
+                        <DropShadow>
+                           <input>
+                              <InnerShadow>
+                                 <input>
+                                    <MotionBlur>
+                                       <input>
+                                          <Shadow />
+                                       </input>
+                                    </MotionBlur>
+                                 </input>
+                              </InnerShadow>
+                           </input>
+                        </DropShadow>
+                     </input>
+                  </ColorAdjust>
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="32.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" fx:controller="product_management.ProductManagementController" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4cdf4" height="90.0" stroke="BLACK" strokeType="INSIDE" width="1150.0" />
+      <Label layoutX="25.0" layoutY="19.0" prefHeight="52.0" prefWidth="329.0" text="ProductManagement" textFill="WHITE">
+         <font>
+            <Font name="Sitka Banner Bold" size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="Exit" layoutX="239.0" layoutY="608.0" mnemonicParsing="false" onAction="#Exit" prefHeight="52.0" prefWidth="544.0" text="Exit">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <MotionBlur>
+                     <input>
+                        <GaussianBlur />
+                     </input>
+                  </MotionBlur>
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#b5dcff" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="SearchProduct" layoutX="239.0" layoutY="507.0" mnemonicParsing="false" onAction="#SearchProduct" prefHeight="52.0" prefWidth="544.0" text="SearchProduct">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#84add3" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeleteProduct" layoutX="239.0" layoutY="393.0" mnemonicParsing="false" onAction="#DeleteProduct" prefHeight="52.0" prefWidth="544.0" text="DeleteProduct">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#84add3" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="EditProduct" layoutX="239.0" layoutY="277.0" mnemonicParsing="false" onAction="#EditProduct" prefHeight="52.0" prefWidth="544.0" text="EditProduct">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#84add3" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="AddProduct" layoutX="239.0" layoutY="172.0" mnemonicParsing="false" onAction="#AddProduct" prefHeight="52.0" prefWidth="544.0" text="AddProduct">
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant color="#84add3" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

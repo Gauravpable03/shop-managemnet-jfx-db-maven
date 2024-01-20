@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" fx:controller="home_screen.HomeScreenController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="UserManagement" layoutX="318.0" layoutY="277.0" mnemonicParsing="false" onAction="#UserManagement" prefHeight="51.0" prefWidth="534.0" text="UserManagement">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="ProductManagement" layoutX="318.0" layoutY="394.0" mnemonicParsing="false" onAction="#ProductManagement" prefHeight="51.0" prefWidth="534.0" text="ProductManagement">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="Exit" layoutX="318.0" layoutY="508.0" mnemonicParsing="false" onAction="#Exit" prefHeight="51.0" prefWidth="534.0" text="Exit">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="323.0" layoutY="30.0" prefHeight="69.0" prefWidth="525.0" text="Welcome To ShopManagement" textFill="#6f6590">
+         <font>
+            <Font name="Sitka Banner" size="43.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4cdf4" height="820.0" layoutX="1025.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4cdf4" height="25.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="1150.0" />
+   </children>
+</Pane>

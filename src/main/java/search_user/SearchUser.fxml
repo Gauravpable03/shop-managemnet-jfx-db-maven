@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="search_user.SearchUserController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4cdf4" height="90.0" stroke="BLACK" strokeType="INSIDE" width="1150.0" />
+      <Label layoutX="14.0" layoutY="25.0" prefHeight="41.0" prefWidth="191.0" text="Search User" textFill="WHITE">
+         <font>
+            <Font name="Sitka Banner Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="862.0" layoutY="23.0" text="G" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="908.0" layoutY="26.0" text="Gaurav (Admin)" textFill="WHITE">
+         <font>
+            <Font name="Sitka Banner Bold" size="34.0" />
+         </font>
+      </Label>
+      <Circle fill="#202290" layoutX="873.0" layoutY="46.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextField fx:id="UserName" layoutX="369.0" layoutY="220.0" prefHeight="47.0" prefWidth="476.0" />
+      <TextField fx:id="EmailID" layoutX="369.0" layoutY="339.0" prefHeight="47.0" prefWidth="476.0" />
+      <TextField fx:id="Password" layoutX="369.0" layoutY="456.0" prefHeight="47.0" prefWidth="476.0" />
+      <TextField fx:id="User_Role" layoutX="369.0" layoutY="573.0" prefHeight="47.0" prefWidth="476.0" />
+      <TextField fx:id="User" layoutX="328.0" layoutY="106.0" prefHeight="47.0" prefWidth="476.0" />
+      <Label layoutX="151.0" layoutY="229.0" prefHeight="29.0" prefWidth="128.0" text="User Name ">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="349.0" prefHeight="28.0" prefWidth="128.0" text="Email_ID">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="465.0" prefHeight="28.0" prefWidth="110.0" text="Password">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="582.0" prefHeight="28.0" prefWidth="117.0" text="User_Role">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="115.0" prefHeight="29.0" prefWidth="77.0" text="User">
+         <font>
+            <Font name="Sitka Banner Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="Search" layoutX="873.0" layoutY="106.0" mnemonicParsing="false" onAction="#Search" prefHeight="39.0" prefWidth="172.0" text="Search">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#799eda" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="862.0" layoutY="22.0" text="G" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="Close" layoutX="449.0" layoutY="714.0" mnemonicParsing="false" onAction="#Close" prefHeight="39.0" prefWidth="270.0" text="Close" textFill="RED">
+         <cursor>
+            <Cursor fx:constant="W_RESIZE" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <ColorAdjust>
+                     <input>
+                        <DropShadow>
+                           <input>
+                              <InnerShadow>
+                                 <input>
+                                    <MotionBlur>
+                                       <input>
+                                          <Shadow />
+                                       </input>
+                                    </MotionBlur>
+                                 </input>
+                              </InnerShadow>
+                           </input>
+                        </DropShadow>
+                     </input>
+                  </ColorAdjust>
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Banner Bold" size="32.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
